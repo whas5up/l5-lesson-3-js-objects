@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: darkgreen;
+    background-image: url('images/jungle.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 200;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+#exercises {
+    background-image: url('images/dinosaurs-bg.jpg');
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 200;
+    text-align: left;
+    max-inline-size: 60ch;
+}
+
+header {
+    padding: 5px 0;
+    background: rgba(50, 68, 36, 0.7);
+}
+
+#exercises header {
+    background-color: rgba(37, 30, 97, 0.5);
+}
+
+nav a {
+    font-weight: 300;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+main {
+    margin: auto;
+    padding: 3rem 0;
+    width: 98%;
+    max-width: 1600px;
+}
+
+.dinosaur {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5% 40px 0.5%;
+    background-color: #223315;
+    box-shadow: 0 0 10px #324424;
+}
+
+#exercises .dinosaur {
+    background-color: rgba(37, 30, 97, 0.7);
+}
+
+.dinosaur img {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.dino-image {
+    background-color: white;
+}
+
+.dino-info {
+    padding: 30px;
+}
+
+#exercises footer {
+    display: none;
+}
+
+footer {
+    padding: 1%;
+    text-align: center;
+    background: rgba(50, 68, 36, 0.7);
+}
+
+footer>p {
+    font-size: 0.8rem;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .dinosaur {
+        flex-direction: row;
+        flex-wrap: no-wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .dino-image,
+    .dino-info {
+        width: 50%;
+    }
+}
